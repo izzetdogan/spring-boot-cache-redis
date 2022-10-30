@@ -1,7 +1,21 @@
 # spring-boot-cache-redis
-An API using redis with spring-boot cache
+An API using redis with spring-boot cache. 
+Project starts with 500 data entries to not enter any data
 
->to control redis cache 
+>@Cacheable and @CacheEvict do not run on the same class . To prevent this:  Service class divided to 'PostService' and 'PostCreateService'
+
+### Control cache on terminal (redis-cli)
+Redis-server will be running  on docker compose by docker-compose
+
+```
+docker exec -it redis-server redis-cli
+```
+or
+```
+docker exec -it container_id redis-cli
+```
+<b>KEYS *</b> = Show  All keys
+<b>FLUSHALL </b> = Delete all the keys of all the existing databases
 
 
 ## Create RedisConfig
@@ -35,10 +49,10 @@ An API using redis with spring-boot cache
 </ul>
 
 ## Execute
-`mvn clean install
-
- docker-compose up
- `
+```
+mvn clean install
+docker-compose up
+ ```
 
  
 
