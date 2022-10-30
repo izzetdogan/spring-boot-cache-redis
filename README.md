@@ -3,8 +3,8 @@ An Api using redis with spring-boot cache
 
 
 ## Create RedisConfig
-`
-    @Bean
+
+   `@Bean
     fun cacheConfiguration(): RedisCacheConfiguration {
         val mapper = jacksonObjectMapper()
             .registerModule(JavaTimeModule())
