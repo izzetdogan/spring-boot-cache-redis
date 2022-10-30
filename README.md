@@ -14,8 +14,8 @@ or
 ```
 docker exec -it container_id redis-cli
 ```
-<b>KEYS *</b> = Show  All keys
-<b>FLUSHALL </b> = Delete all the keys of all the existing databases
+<b>KEYS *</b> = Show  All keys<br/>
+<b>FLUSHALL </b> = Delete all the keys of all the existing databases<br/>
 
 
 ## Create RedisConfig
@@ -40,6 +40,15 @@ docker exec -it container_id redis-cli
 ```
 
 > data class may produce NotSeriazebla exception. To avoid this  we can use jacksonObjectModule or objectMapper with kotlinModule
+
+## API EndPoints
+<ul>
+<li><b> GET ALL: </b><a>http://localhost:8080/api/v1</a></li>
+<li><b> POST: </b><a>http://localhost:8080/api/v1</a></li>
+<li><b> PUT:  </b><a>http://localhost:8080/api/v1/id</a></li>
+<li><b> DELETE : </b> <a>http://localhost:8080/api/v1/id</a></li>
+</ul>
+
 
 ## Dependency
 <ul>
