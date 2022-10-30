@@ -1,0 +1,9 @@
+
+
+services:
+  redis-server:
+    image: 'redis:6.2'
+    container_name: "redis-server"
+    ports:
+      - "6379:6379"
+    hostname: "localhost"
