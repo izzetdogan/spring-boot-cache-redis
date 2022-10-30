@@ -4,7 +4,7 @@ An Api using redis with spring-boot cache
 
 ## Create RedisConfig
 
-   `@Bean
+   ```kotlin
     fun cacheConfiguration(): RedisCacheConfiguration {
         val mapper = jacksonObjectMapper()
             .registerModule(JavaTimeModule())
@@ -21,7 +21,7 @@ An Api using redis with spring-boot cache
             )
     }
 
-`
+```
 
 data class may produce NotSeriazebla exception. To avoid this  we can use jacksonObjectModule or objectMapper with kotlinModule
 
