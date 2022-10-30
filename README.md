@@ -40,9 +40,8 @@ docker exec -it container_id redis-cli
 ```
 
 > data class may produce NotSeriazebla exception. To avoid this  we can use jacksonObjectModule or objectMapper with kotlinModule
-------
-</br>
 
+</br>
 
 ## API EndPoints
 <ul>
