@@ -2,8 +2,8 @@
 An API using redis with spring-boot cache. 
 Project starts with 500 data entries to not enter any data
 
->@Cacheable and @CacheEvict do not run on the same class . To prevent this:  Service class divided to 'PostService' and 'PostCreateService'
-
+>@Cacheable and @CacheEvict do not run on the same class . To prevent this:  Service class divided to 'PostService' and 'PostCreateService'<br/>
+------
 ### Control cache on terminal (redis-cli)
 Redis-server will be running  on docker compose by docker-compose
 
