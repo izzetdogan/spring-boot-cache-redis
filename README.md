@@ -1,5 +1,7 @@
 # spring-boot-cache-redis
-An Api using redis with spring-boot cache
+An API using redis with spring-boot cache
+
+>to control redis cache 
 
 
 ## Create RedisConfig
@@ -23,18 +25,20 @@ An Api using redis with spring-boot cache
 
 ```
 
-data class may produce NotSeriazebla exception. To avoid this  we can use jacksonObjectModule or objectMapper with kotlinModule
+> data class may produce NotSeriazebla exception. To avoid this  we can use jacksonObjectModule or objectMapper with kotlinModule
 
-##Dependency
+## Dependency
 <ul>
 <li>spring-boot-starter-data-redis</li>
 <li>spring-boot-starter-cache</li>
 <li>h2-database</li>
 </ul>
 
-##Execute
+## Execute
 `mvn clean install
+
  docker-compose up
- `,
+ `
+
  
 
